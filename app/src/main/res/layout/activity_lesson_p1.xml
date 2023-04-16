@@ -22,7 +22,7 @@
 
     </FrameLayout-->
 
-    <TextView
+    <!--TextView
         android:id="@+id/textView3"
         android:layout_width="417dp"
         android:layout_height="327dp"
@@ -34,5 +34,5 @@
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30sp"/>
+        android:textSize="30sp"/ -->
 </androidx.constraintlayout.widget.ConstraintLayout>
