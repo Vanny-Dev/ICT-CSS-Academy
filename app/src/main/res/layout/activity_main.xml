@@ -33,7 +33,7 @@
     </TextView>
 
     <FrameLayout
-        android:id="@+id/frame1"
+        android:id="@+id/coc1"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:background="@drawable/radius"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.346">
 
 
-        <ImageButton
+        <ImageView
             android:id="@+id/btn1"
             android:layout_width="110dp"
             android:layout_height="110dp"
@@ -53,10 +53,7 @@
             android:background="#FFC107"
             android:scaleType="fitCenter"
             android:src="@drawable/comp1"
-            app:tint="@color/black">
-
-        </ImageButton>
-
+            app:tint="@color/black" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -65,13 +62,11 @@
             android:layout_marginBottom="5dp"
             android:text="@string/coc_1"
             android:textColor="@color/black"
-            android:textSize="20sp">
-
-        </TextView>
+            android:textSize="20sp" />
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frame2"
+        android:id="@+id/coc2"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:background="@drawable/radius"
@@ -82,17 +77,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.346">
 
-        <ImageButton
-            android:id="@+id/btn2"
+        <ImageView
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
             android:background="#FFC107"
             android:scaleType="fitCenter"
             android:src="@drawable/comp1"
-            app:tint="@color/black">
-
-        </ImageButton>
+            app:tint="@color/black" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,13 +93,12 @@
             android:layout_marginBottom="5dp"
             android:text="@string/coc_2"
             android:textColor="@color/black"
-            android:textSize="20sp">
+            android:textSize="20sp" />
 
-        </TextView>
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frame3"
+        android:id="@+id/coc3"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:background="@drawable/radius"
@@ -118,17 +109,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698">
 
-        <ImageButton
-            android:id="@+id/btn3"
+        <ImageView
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
             android:background="#FFC107"
             android:scaleType="fitCenter"
             android:src="@drawable/comp1"
-            app:tint="@color/black">
-
-        </ImageButton>
+            app:tint="@color/black" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -137,13 +125,12 @@
             android:layout_marginBottom="5dp"
             android:text="@string/coc_3"
             android:textColor="@color/black"
-            android:textSize="20sp">
+            android:textSize="20sp" />
 
-        </TextView>
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frame4"
+        android:id="@+id/coc4"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:background="@drawable/radius"
@@ -154,17 +141,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698">
 
-        <ImageButton
-            android:id="@+id/btn4"
+        <ImageView
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
             android:background="#FFC107"
             android:scaleType="fitCenter"
             android:src="@drawable/comp1"
-            app:tint="@color/black">
-
-        </ImageButton>
+            app:tint="@color/black" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -173,12 +157,7 @@
             android:layout_marginBottom="5dp"
             android:text="@string/coc_4"
             android:textColor="@color/black"
-            android:textSize="20sp">
-
-        </TextView>
+            android:textSize="20sp" />
     </FrameLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

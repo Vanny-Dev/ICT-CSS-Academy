@@ -14,7 +14,7 @@
         <activity
             android:name=".lessonP1"
             android:exported="false"
-            android:label="@string/disassemble_assemble_desktop_computer"/>
+            android:label="@string/coc_1_disassemble_assemble_desktop_computer"/>
         <activity
             android:name=".cocFourActivity"
             android:exported="false"
