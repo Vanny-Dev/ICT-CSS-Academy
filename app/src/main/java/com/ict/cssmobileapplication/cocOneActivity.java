@@ -11,10 +11,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 public class cocOneActivity extends AppCompatActivity {
 
     ListView listsView;
-    ArrayAdapter<String> adapter;
+    Lists adapter;
+    ArrayList<String> lists;
     SharedPreferences pref;
 
     @Override
@@ -23,11 +26,21 @@ public class cocOneActivity extends AppCompatActivity {
 
         // Preferences
         pref = getSharedPreferences(preferencesData.PREFERENCE_NAME, MODE_PRIVATE);
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, MyLists.coc_1);
+        setContentView(R.layout.activity_coc_one);
 
         // layout
-        setContentView(R.layout.activity_coc_one);
         listsView = findViewById(R.id.coc_1_lists);
+
+
+        lists = new ArrayList<String>();
+        adapter = new Lists(this, lists);
+
+        for(int i = 0; i < MyLists.coc_1.length; i++){
+            lists.add(MyLists.coc_1[i]);
+        }
+
+        adapter.notifyDataSetChanged();
+        adapter.notifyDataSetInvalidated();
 
         listsView.setAdapter(adapter);
 
