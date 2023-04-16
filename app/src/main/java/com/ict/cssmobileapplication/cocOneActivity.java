@@ -13,7 +13,6 @@ import android.widget.ListView;
 
 public class cocOneActivity extends AppCompatActivity {
 
-    Button coc_lp1;
     ListView listsView;
     ArrayAdapter<String> adapter;
     SharedPreferences pref;
@@ -28,7 +27,6 @@ public class cocOneActivity extends AppCompatActivity {
         // layout
         setContentView(R.layout.activity_coc_one);
 
-        coc_lp1 = (Button) findViewById(R.id.lp1);
         listsView = findViewById(R.id.coc_1_lists);
 
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, MyLists.coc_1);
@@ -46,12 +44,6 @@ public class cocOneActivity extends AppCompatActivity {
             }
         });
 
-        coc_lp1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View a) {
-                Intent intentLoadNewActivity = new Intent(cocOneActivity.this, lessonP1.class);
-                startActivity(intentLoadNewActivity);
-            }
-        });
+
     }
 }

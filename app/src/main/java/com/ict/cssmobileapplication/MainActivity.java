@@ -11,14 +11,12 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.google.android.material.snackbar.Snackbar;
 
-    ImageButton coc_oneBtn;
-    ImageButton coc_twoBtn;
-    ImageButton coc_threeBtn;
-    ImageButton coc_fourBtn;
+public class MainActivity extends AppCompatActivity {
 
     FrameLayout coc_1, coc_2, coc_3, coc_4;
 
@@ -27,20 +25,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //COC 1
-        coc_oneBtn = (ImageButton) findViewById(R.id.btn1);
-        //COC 2
-        coc_twoBtn = (ImageButton) findViewById(R.id.btn2);
-        //COC 3
-        coc_threeBtn = (ImageButton) findViewById(R.id.btn3);
-        //COC 4
-        coc_fourBtn = (ImageButton) findViewById(R.id.btn4);
-
         // Frames to click
         coc_1 = findViewById(R.id.coc1);
         coc_2 = findViewById(R.id.coc2);
         coc_3 = findViewById(R.id.coc3);
         coc_4 = findViewById(R.id.coc4);
+
+        // on clicks
+        coc_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, cocOneActivity.class));
+            }
+        });
+        coc_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, cocTwoActivity.class));
+            }
+        });
+        coc_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, cocThreeActivity.class));
+            }
+        });
+        coc_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, cocFourActivity.class));
+            }
+        });
 
         //VIDEO BG
         /*VideoView videoView = findViewById(R.id.videoView);
@@ -61,22 +76,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);
         mediaController.setAnchorView(videoView);*/
-    }
-
-    @Override
-    public void onClick(View view) {
-        if (coc_1 == view) {
-            // First window
-            startActivity(new Intent(MainActivity.this, cocOneActivity.class));
-        }else if(coc_2 == view){
-            // Second Window
-            startActivity(new Intent(MainActivity.this, cocTwoActivity.class));
-        }else if(coc_3 == view){
-            // Third Window
-            startActivity(new Intent(MainActivity.this, cocThreeActivity.class));
-        }else if(coc_4 == view){
-            // Fourth Window
-            startActivity(new Intent(MainActivity.this, cocFourActivity.class));
-        }
     }
 }

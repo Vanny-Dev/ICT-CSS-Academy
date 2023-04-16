@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="293dp"
             android:layout_height="83dp"
-            android:text="@string/configuring_computer_systems_and_networks"
+            android:text="@string/coc_2_configuring_computer_systems_and_networks"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="25sp"
@@ -26,26 +26,26 @@
             android:id="@+id/lp1"
             android:layout_width="292dp"
             android:layout_height="100dp"
-            android:text="@string/creating_network_cables"
+            android:text="@string/coc_2_creating_network_cables"
             android:layout_marginVertical="20dp"
             android:textSize="15sp" />
 
         <Button
             android:layout_width="292dp"
             android:layout_height="100dp"
-            android:text="@string/network_configuration"
+            android:text="@string/coc_2_network_configuration"
             android:layout_marginVertical="20dp"
             android:textSize="15sp"/>
         <Button
             android:layout_width="292dp"
             android:layout_height="100dp"
-            android:text="@string/set_router_wi_fi_wireless_access_point_repeater_configuration"
+            android:text="@string/coc_2_set_router_wi_fi_wireless_access_point_repeater_configuration"
             android:layout_marginVertical="20dp"
             android:textSize="15sp"/>
         <Button
             android:layout_width="292dp"
             android:layout_height="100dp"
-            android:text="@string/inspect_and_test_configured_computer_network"
+            android:text="@string/coc_2_inspect_and_test_configured_computer_network"
             android:layout_marginVertical="20dp"
             android:textSize="15sp"/>
 
