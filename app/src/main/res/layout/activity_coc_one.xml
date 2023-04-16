@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cocOneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="293dp"
+            android:layout_height="83dp"
+            android:text="@string/installing_computer_systems_and_networks"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/lp1"
+            android:layout_width="292dp"
+            android:layout_height="100dp"
+            android:text="@string/disassemble_assemble_desktop_computer"
+            android:textSize="15sp"
+            android:layout_marginVertical="20dp"/>
+
+        <Button
+            android:layout_width="292dp"
+            android:layout_height="100dp"
+            android:text="@string/prepare_installer_creating_portable_bootable_device"
+            android:textSize="15sp"
+            android:layout_marginVertical="20dp"/>
+
+        <Button
+            android:layout_width="292dp"
+            android:layout_height="100dp"
+            android:text="@string/configure_bios"
+            android:textSize="15sp"
+            android:layout_marginVertical="20dp"/>
+
+        <Button
+            android:layout_width="292dp"
+            android:layout_height="100dp"
+            android:text="@string/install_windows_server_2008_r2"
+            android:textSize="15sp"
+            android:layout_marginVertical="20dp"/>
+
+        <Button
+            android:layout_width="292dp"
+            android:layout_height="100dp"
+            android:text="@string/install_microsoft_office"
+            android:textSize="15sp"
+            android:layout_marginVertical="20dp"/>
+
+    <!--TextView
+        android:id="@+id/textView"
+        android:layout_width="281dp"
+        android:layout_height="539dp"
+        android:gravity="left"
+        android:text="            Table of Contents\n\n\n\n\nActivity Sheet - Operating System\n\n\nBasic Network Configuration\n\n\nCOC 1 - Computer Systems Servicing Presentation\n\n\n
+COC 1 - Install and Configure a Computer System\n\n\nCOC 1.2.3 - Reviewer\n\n\n"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" /-->
+
+    </LinearLayout>
+
+</ScrollView>

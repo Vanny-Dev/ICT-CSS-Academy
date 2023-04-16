@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1017096855255",
+    "project_id": "ict-css-mobile-application",
+    "storage_bucket": "ict-css-mobile-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017096855255:android:348bb635848621df159a92",
+        "android_client_info": {
+          "package_name": "com.ict.cssmobileapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017096855255-dccgf4jq935bfugag8mc26amdcekgvbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ8mYwCryUj7Q-xIGO03hr7y5Th14FyJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017096855255-dccgf4jq935bfugag8mc26amdcekgvbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
