@@ -6,7 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".cocOneActivity">
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/lists"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <!--LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -57,7 +62,7 @@
             android:textSize="15sp"
             android:layout_marginVertical="20dp"/>
 
-    <!--TextView
+    <TextView
         android:id="@+id/textView"
         android:layout_width="281dp"
         android:layout_height="539dp"
@@ -70,8 +75,8 @@ COC 1 - Install and Configure a Computer System\n\n\nCOC 1.2.3 - Reviewer\n\n\n"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" /-->
+        app:layout_constraintVertical_bias="0.421" />
 
-    </LinearLayout>
+    </LinearLayout-->
 
 </ScrollView>

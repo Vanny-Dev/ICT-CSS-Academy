@@ -33,7 +33,7 @@
     </TextView>
 
     <FrameLayout
-        android:id="@+id/frame1"
+        android:id="@+id/coc1"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:background="@drawable/radius"
@@ -71,7 +71,7 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frame2"
+        android:id="@+id/coc2"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:background="@drawable/radius"
@@ -107,7 +107,7 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frame3"
+        android:id="@+id/coc3"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:background="@drawable/radius"
@@ -143,7 +143,7 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frame4"
+        android:id="@+id/coc4"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:background="@drawable/radius"
