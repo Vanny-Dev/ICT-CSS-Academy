@@ -23,13 +23,11 @@ public class cocOneActivity extends AppCompatActivity {
 
         // Preferences
         pref = getSharedPreferences(preferencesData.PREFERENCE_NAME, MODE_PRIVATE);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, MyLists.coc_1);
 
         // layout
         setContentView(R.layout.activity_coc_one);
-
         listsView = findViewById(R.id.coc_1_lists);
-
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, MyLists.coc_1);
 
         listsView.setAdapter(adapter);
 
@@ -40,7 +38,7 @@ public class cocOneActivity extends AppCompatActivity {
                 pref.edit().putString(preferencesData.PREFERENCE_CURRENT_ACTIVITY, name);
                 // Don't use the commit or apply here, to reset the data
                 // Open new activity? add this below
-                // startActivity(new Intent(cocOneActivity.this, lessonP1.class));
+                startActivity(new Intent(cocOneActivity.this, lessonP1.class));
             }
         });
 
