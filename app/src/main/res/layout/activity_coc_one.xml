@@ -7,7 +7,7 @@
     tools:context=".cocOneActivity">
 
     <ListView
-        android:id="@+id/lists"
+        android:id="@+id/coc_1_lists"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"/>
 

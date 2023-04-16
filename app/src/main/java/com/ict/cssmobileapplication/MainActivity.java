@@ -67,16 +67,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (coc_1 == view) {
             // First window
-
+            startActivity(new Intent(MainActivity.this, cocOneActivity.class));
         }else if(coc_2 == view){
             // Second Window
-
+            startActivity(new Intent(MainActivity.this, cocTwoActivity.class));
         }else if(coc_3 == view){
             // Third Window
-
+            startActivity(new Intent(MainActivity.this, cocThreeActivity.class));
         }else if(coc_4 == view){
             // Fourth Window
-
+            startActivity(new Intent(MainActivity.this, cocFourActivity.class));
         }
     }
 }
