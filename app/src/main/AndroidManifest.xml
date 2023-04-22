@@ -20,6 +20,7 @@
 
 		<activity
 			android:name=".lessonP1"
+			android:parentActivityName=".cocActivity"
 			android:exported="false"/>
 
 		<activity

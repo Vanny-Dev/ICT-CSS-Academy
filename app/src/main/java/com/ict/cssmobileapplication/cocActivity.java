@@ -23,10 +23,11 @@ public class cocActivity extends AppCompatActivity {
 	AppCompatTextView txt, noViews;
 
 	@Override
-	protected void onCreate(@Nullable Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		pref = getSharedPreferences(preferencesData.PREFERENCE_NAME, MODE_PRIVATE);
-
+		pref.edit().remove(preferencesData.PREFERENCE_VIDEO_TITLE)
+				.remove(preferencesData.PREFERENCE_VIDEO).apply();
 		setTitle(pref.getString(preferencesData.PREFERENCE_TITLE, ""));
 		setContentView(R.layout.coc_layout);
 		txt = findViewById(R.id.cocTitle);
@@ -62,7 +63,8 @@ public class cocActivity extends AppCompatActivity {
 					__lists = MyLists.jsonArrays(json.getJSONObject(name), "links");
 				}catch(Exception e){}
 				String name = String.valueOf(__lists[i]);
-				pref.edit().putString(preferencesData.PREFERENCE_CURRENT_ACTIVITY, name);
+				pref.edit().putString(preferencesData.PREFERENCE_VIDEO_TITLE, String.valueOf(listsView.getItemAtPosition(i)))
+						.putString(preferencesData.PREFERENCE_VIDEO, name).apply();
 				// Don't use the commit or apply here, to reset the data
 				// Open new activity? add this below
 				startActivity(new Intent(cocActivity.this, lessonP1.class));
