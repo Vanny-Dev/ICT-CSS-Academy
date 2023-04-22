@@ -1,27 +1,27 @@
 <resources>
-    <string name="app_name">ICT-CSS Academy</string>
+	<string name="app_name">ICT-CSS Academy</string>
 
-    <!--Front Page-->
-    <string name="lessons_and_tutorials">Lessons and Tutorials</string>
-    <string name="coc_1">COC 1</string>
-    <string name="coc_2">COC 2</string>
-    <string name="coc_3">COC 3</string>
-    <string name="coc_4">COC 4</string>
+	<!--Front Page-->
+	<string name="lessons_and_tutorials">Lessons and Tutorials</string>
+	<string name="coc_1">COC 1</string>
+	<string name="coc_2">COC 2</string>
+	<string name="coc_3">COC 3</string>
+	<string name="coc_4">COC 4</string>
 
-    <!--COC 1-->
-    <string name="coc_1_disassemble_assemble_desktop_computer">Disassemble/Assemble Desktop Computer</string>
-    <string name="coc_1_installing_computer_systems_and_networks">Installing Computer Systems and Networks</string>
-    <string name="coc_1_prepare_installer_creating_portable_bootable_device">Prepare Installer (Creating Portable Bootable Device)</string>
-    <string name="coc_1_configure_bios">Configure BIOS</string>
-    <string name="coc_1_install_windows_server_2008_r2">Install Windows Server 2008 R2</string>
-    <string name="coc_1_install_microsoft_office">Install Microsoft Office</string>
+	<!--COC 1-->
+	<string name="coc_1_disassemble_assemble_desktop_computer">Disassemble/Assemble Desktop Computer</string>
+	<string name="coc_1_installing_computer_systems_and_networks">Installing Computer Systems and Networks</string>
+	<string name="coc_1_prepare_installer_creating_portable_bootable_device">Prepare Installer (Creating Portable Bootable Device)</string>
+	<string name="coc_1_configure_bios">Configure BIOS</string>
+	<string name="coc_1_install_windows_server_2008_r2">Install Windows Server 2008 R2</string>
+	<string name="coc_1_install_microsoft_office">Install Microsoft Office</string>
 
-    <!--COC 2-->
-    <string name="coc_2_configuring_computer_systems_and_networks">Configuring Computer Systems and Networks</string>
-    <string name="coc_2_creating_network_cables">Creating Network Cables</string>
-    <string name="coc_2_network_configuration">Network Configuration</string>
-    <string name="coc_2_set_router_wi_fi_wireless_access_point_repeater_configuration">Set router/Wi-Fi/wireless access point/repeater configuration</string>
-    <string name="coc_2_inspect_and_test_configured_computer_network">Inspect and test configured computer network</string>
+	<!--COC 2-->
+	<string name="coc_2_configuring_computer_systems_and_networks">Configuring Computer Systems and Networks</string>
+	<string name="coc_2_creating_network_cables">Creating Network Cables</string>
+	<string name="coc_2_network_configuration">Network Configuration</string>
+	<string name="coc_2_set_router_wi_fi_wireless_access_point_repeater_configuration">Set router/Wi-Fi/wireless access point/repeater configuration</string>
+	<string name="coc_2_inspect_and_test_configured_computer_network">Inspect and test configured computer network</string>
 
 
 </resources>

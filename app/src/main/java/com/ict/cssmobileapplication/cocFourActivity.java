@@ -6,9 +6,9 @@ import android.os.Bundle;
 
 public class cocFourActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coc_four);
-    }
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.activity_coc_four);
+		}
 }

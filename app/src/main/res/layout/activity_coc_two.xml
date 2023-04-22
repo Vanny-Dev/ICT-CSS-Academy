@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    tools:context=".cocTwoActivity">
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center_horizontal"
+	tools:context=".cocTwoActivity">
 
-    <TextView
-        android:layout_width="293dp"
-        android:layout_height="83dp"
-        android:text="@string/coc_2_configuring_computer_systems_and_networks"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25sp"/>
-
-
-    <ListView
-        android:id="@+id/coc_2_lists"
-        android:layout_weight="1.0"
-        android:layout_margin="12dp"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
-
-        <!--Button
-            android:id="@+id/lp1"
-            android:layout_width="292dp"
-            android:layout_height="100dp"
-            android:text="@string/coc_2_creating_network_cables"
-            android:layout_marginVertical="20dp"
-            android:textSize="15sp" />
-
-        <Button
-            android:layout_width="292dp"
-            android:layout_height="100dp"
-            android:text="@string/coc_2_network_configuration"
-            android:layout_marginVertical="20dp"
-            android:textSize="15sp"/>
-        <Button
-            android:layout_width="292dp"
-            android:layout_height="100dp"
-            android:text="@string/coc_2_set_router_wi_fi_wireless_access_point_repeater_configuration"
-            android:layout_marginVertical="20dp"
-            android:textSize="15sp"/>
-        <Button
-            android:layout_width="292dp"
-            android:layout_height="100dp"
-            android:text="@string/coc_2_inspect_and_test_configured_computer_network"
-            android:layout_marginVertical="20dp"
-            android:textSize="15sp"/>
+	<TextView
+		android:layout_width="293dp"
+		android:layout_height="83dp"
+		android:text="@string/coc_2_configuring_computer_systems_and_networks"
+		android:textAlignment="center"
+		android:textColor="@color/black"
+		android:textSize="25sp"/>
 
 
-    </LinearLayout>
+	<ListView
+		android:id="@+id/coc_2_lists"
+		android:layout_weight="1.0"
+		android:layout_margin="12dp"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="281dp"
-        android:layout_height="539dp"
-        android:gravity="left"
-        android:text="            Table of Contents\n\n\n\n\n\nCOC 2 - Setup Computer Networks\n\n\nCOC 2 - Configuring of Computer Systems and Networks\n\n\n"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" /-->
+	<!--Button
+		android:id="@+id/lp1"
+		android:layout_width="292dp"
+		android:layout_height="100dp"
+		android:text="@string/coc_2_creating_network_cables"
+		android:layout_marginVertical="20dp"
+		android:textSize="15sp" />
+
+	<Button
+		android:layout_width="292dp"
+		android:layout_height="100dp"
+		android:text="@string/coc_2_network_configuration"
+		android:layout_marginVertical="20dp"
+		android:textSize="15sp"/>
+	<Button
+		android:layout_width="292dp"
+		android:layout_height="100dp"
+		android:text="@string/coc_2_set_router_wi_fi_wireless_access_point_repeater_configuration"
+		android:layout_marginVertical="20dp"
+		android:textSize="15sp"/>
+	<Button
+		android:layout_width="292dp"
+		android:layout_height="100dp"
+		android:text="@string/coc_2_inspect_and_test_configured_computer_network"
+		android:layout_marginVertical="20dp"
+		android:textSize="15sp"/>
+
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="281dp"
+		android:layout_height="539dp"
+		android:gravity="left"
+		android:text="            Table of Contents\n\n\n\n\n\nCOC 2 - Setup Computer Networks\n\n\nCOC 2 - Configuring of Computer Systems and Networks\n\n\n"
+		android:textColor="@color/black"
+		android:textSize="20sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.421" /-->
 
 </androidx.appcompat.widget.LinearLayoutCompat>
