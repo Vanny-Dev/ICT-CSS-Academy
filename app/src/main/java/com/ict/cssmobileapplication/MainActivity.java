@@ -57,24 +57,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //VIDEO BG
-        /*VideoView videoView = findViewById(R.id.videoView);
-        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.bg);
-
-        videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                videoView.start();
-            }
-        });
-        videoView.start();
-
-        //OPTIONAL
-        Uri uri = Uri.parse(videoPath);
-        videoView.setVideoURI(uri);
-
-        MediaController mediaController = new MediaController(this);
-        videoView.setMediaController(mediaController);
-        mediaController.setAnchorView(videoView);*/
     }
 }

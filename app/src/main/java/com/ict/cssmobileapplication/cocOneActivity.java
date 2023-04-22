@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class cocOneActivity extends AppCompatActivity {
@@ -28,6 +30,12 @@ public class cocOneActivity extends AppCompatActivity {
         pref = getSharedPreferences(preferencesData.PREFERENCE_NAME, MODE_PRIVATE);
         setContentView(R.layout.activity_coc_one);
 
+        JSONObject json = MyLists.json(this);
+        String[] _lists = {};
+        try{
+            _lists = MyLists.jsonArrays(json.getJSONObject("coc_1"), "names");
+        }catch(Exception e){}
+
         // layout
         listsView = findViewById(R.id.coc_1_lists);
 
@@ -35,8 +43,8 @@ public class cocOneActivity extends AppCompatActivity {
         lists = new ArrayList<String>();
         adapter = new Lists(this, lists);
 
-        for(int i = 0; i < MyLists.coc_1.length; i++){
-            lists.add(MyLists.coc_1[i]);
+        for(int i = 0; i < _lists.length; i++){
+            lists.add(_lists[i]);
         }
 
         adapter.notifyDataSetChanged();
@@ -47,7 +55,11 @@ public class cocOneActivity extends AppCompatActivity {
         listsView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String name = String.valueOf(listsView.getItemAtPosition(i));
+                String[] __lists = {};
+                try{
+                    __lists = MyLists.jsonArrays(json.getJSONObject("coc_1"), "links");
+                }catch(Exception e){}
+                String name = String.valueOf(__lists[i]);
                 pref.edit().putString(preferencesData.PREFERENCE_CURRENT_ACTIVITY, name);
                 // Don't use the commit or apply here, to reset the data
                 // Open new activity? add this below
