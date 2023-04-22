@@ -8,6 +8,8 @@
 	<string name="coc_3">COC 3</string>
 	<string name="coc_4">COC 4</string>
 
+	<string name="soon">Coming soon</string>
+
 	<!--COC 1-->
 	<string name="coc_1_disassemble_assemble_desktop_computer">Disassemble/Assemble Desktop Computer</string>
 	<string name="coc_1_installing_computer_systems_and_networks">Installing Computer Systems and Networks</string>

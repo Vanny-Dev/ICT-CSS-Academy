@@ -32,7 +32,7 @@ public class cocActivity extends AppCompatActivity {
 
 		txt.setText(pref.getString(preferencesData.PREFERENCE_TITLE, ""));
 
-		noViews.setText("Comming soon...");
+		noViews.setText(R.string.soon);
 
 		JSONObject json = MyLists.json(this);
 		String[] _lists = {};
