@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:layout_margin="25dp"
+		android:id="@+id/cocTitle"
+		android:gravity="center"
+		style="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="25sp" />
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/noViews"
+		android:layout_width="281dp"
+		android:layout_height="539dp"
+		android:gravity="center"
+		android:text="COMING SOON..."
+		android:textColor="@color/black"
+		android:textSize="20sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.421" />
+
+	<ListView
+		android:id="@+id/cocLists"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
