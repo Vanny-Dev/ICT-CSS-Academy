@@ -18,13 +18,13 @@ public class lessonP1 extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
 		setTitle("");
 		setTheme(android.R.style.Theme_DeviceDefault_NoActionBar);
 		LinearLayout layout = new LinearLayout(this);
 		VideoView view = new VideoView(this);
 		try {
-			Uri url = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.bg);
+			Uri url = Uri.parse("https://drive.google.com/u/0/uc?id=1-2wG-h1IqJ3FRGufDeQQduQBxrBroXjq&export=download&confirm=t&uuid=fb3cf3a3-9dea-49ae-a2b2-c8e116dc042f&at=ANzk5s6fvolLhDqFHQKXnIP4DWZ0:1682145049826" );//"android.resource://" + getPackageName() + "/" + R.raw.bg);
 			MediaController control = new MediaController(this);
 			view.setVideoURI(url);
 			view.setMediaController(control);
@@ -37,7 +37,7 @@ public class lessonP1 extends AppCompatActivity {
 		layout.setOrientation(LinearLayout.VERTICAL);
 		layout.setGravity(Gravity.CENTER);
 
-		layout.addView(view);
+		layout.addView(view, new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT));
 		setContentView(layout);
 	}
 }
