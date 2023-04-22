@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -25,18 +24,22 @@
         <activity
             android:name=".cocFourActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:label="COC 4"/>
         <activity
             android:name=".cocThreeActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:label="COC 3"/>
         <activity
             android:name=".cocOneActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:label="COC 1"/>
         <activity
             android:name=".cocTwoActivity"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             android:label="COC 2"/>
         <activity
             android:name=".MainActivity"
