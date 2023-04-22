@@ -4,16 +4,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
-
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
-
 import org.json.JSONObject;
-
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class cocActivity extends AppCompatActivity {
 	SharedPreferences pref;
@@ -42,35 +38,38 @@ public class cocActivity extends AppCompatActivity {
 		String[] _lists = {};
 
 		try{
+			assert json != null;
 			_lists = MyLists.jsonArrays(json.getJSONObject(name), "names");
-		}catch(Exception e){}
+		}catch(Exception ignored){}
 
 		listsView = findViewById(R.id.cocLists);
-		lists = new ArrayList<String>();
+		lists = new ArrayList<>();
 		adapter = new Lists(this, lists);
-		for(int i = 0; i < _lists.length; i++){
-			lists.add(_lists[i]);
+		if (_lists != null) {
+			Collections.addAll(lists, _lists);
 		}
 		adapter.notifyDataSetChanged();
 		adapter.notifyDataSetInvalidated();
 		listsView.setAdapter(adapter);
 
-		listsView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-			@Override
-			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-				String[] __lists = {};
-				try{
-					__lists = MyLists.jsonArrays(json.getJSONObject(name), "links");
-				}catch(Exception e){}
-				String name = String.valueOf(__lists[i]);
-				pref.edit().putString(preferencesData.PREFERENCE_VIDEO_TITLE, String.valueOf(listsView.getItemAtPosition(i)))
-						.putString(preferencesData.PREFERENCE_VIDEO, name).apply();
-				// Don't use the commit or apply here, to reset the data
-				// Open new activity? add this below
-				startActivity(new Intent(cocActivity.this, lessonP1.class));
-			}
+		listsView.setOnItemClickListener((adapterView, view, i, l) -> {
+			String[] __lists = {};
+			try{
+				__lists = MyLists.jsonArrays(json.getJSONObject(name), "links");
+			}catch(Exception ignored){}
+
+			assert __lists != null;
+			String name1 = String.valueOf(__lists[i]);
+
+			pref.edit().putString(preferencesData.PREFERENCE_VIDEO_TITLE, String.valueOf(listsView.getItemAtPosition(i)))
+					.putString(preferencesData.PREFERENCE_VIDEO, name1).apply();
+
+			// Don't use the commit or apply here, to reset the data
+			// Open new activity? add this below
+			startActivity(new Intent(cocActivity.this, lessonP1.class));
 		});
 
+		assert _lists != null;
 		if(_lists.length > 0){
 			noViews.setVisibility(View.GONE);
 		}else{
