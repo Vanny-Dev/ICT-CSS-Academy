@@ -21,7 +21,7 @@
 		<activity
 			android:name=".lessonP1"
 			android:exported="false"
-			android:label="@string/coc_1_disassemble_assemble_desktop_computer"/>
+			android:parentActivityName=".cocActivity"/>
 
 		<activity
 			android:name=".cocActivity"
