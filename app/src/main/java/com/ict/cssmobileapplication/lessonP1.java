@@ -1,8 +1,11 @@
 package com.ict.cssmobileapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
+import android.view.Gravity;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -15,22 +18,13 @@ public class lessonP1 extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//setContentView(R.layout.activity_lesson_p1);
-
-        /*VideoView videoView = findViewById(R.id.videoView);
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.bg;
-
-        //OPTIONAL
-        Uri uri = Uri.parse(videoPath);
-        videoView.setVideoURI(uri);
-
-        MediaController mediaController = new MediaController(this);
-        videoView.setMediaController(mediaController);
-        mediaController.setAnchorView(videoView);*/
-
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		setTitle("");
+		setTheme(android.R.style.Theme_DeviceDefault_NoActionBar);
+		LinearLayout layout = new LinearLayout(this);
 		VideoView view = new VideoView(this);
 		try {
-			Uri url = Uri.parse("I don't know muna hahaha");
+			Uri url = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.bg);
 			MediaController control = new MediaController(this);
 			view.setVideoURI(url);
 			view.setMediaController(control);
@@ -39,6 +33,11 @@ public class lessonP1 extends AppCompatActivity {
 		}catch (Exception e){
 			Toast.makeText(lessonP1.this, "Error" + e.getMessage(), Toast.LENGTH_LONG).show();
 		}
-		setContentView(view);
+
+		layout.setOrientation(LinearLayout.VERTICAL);
+		layout.setGravity(Gravity.CENTER);
+
+		layout.addView(view);
+		setContentView(layout);
 	}
 }
